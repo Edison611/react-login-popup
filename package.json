@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "dist/login-popup.umd.js",
   "module": "dist/login-popup.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/login-popup.es.js",
       "require": "./dist/login-popup.umd.js"
     }
   },
+  "files": ["dist"],
   "peerDependencies": {
     "@react-oauth/google": "^0.12.2",
     "react": "^19.0.0",
@@ -21,6 +23,9 @@
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.7.0"
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^4.5.4",
+    "typescript": "^5.4.0"
   }
 }
