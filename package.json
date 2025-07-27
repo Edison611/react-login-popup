@@ -10,9 +10,9 @@
     }
   },
   "peerDependencies": {
-    "@react-oauth/google": "^0.8.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@react-oauth/google": "^0.12.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "scripts": {
     "build": "vite build"
