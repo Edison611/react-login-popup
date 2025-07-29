@@ -10,6 +10,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'ReactLoginPopup',
       fileName: (format) => `login-popup.${format}.js`,
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['react', 'react-dom', '@react-oauth/google'],
