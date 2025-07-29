@@ -12,8 +12,15 @@ export default defineConfig({
       fileName: (format) => `login-popup.${format}.js`,
       formats: ['es'],
     },
+
     rollupOptions: {
-      external: ['react', 'react-dom', '@react-oauth/google'],
+      external: [
+        'react',
+        'react-dom',
+        '@react-oauth/google',
+        'react/jsx-runtime',
+        'react/jsx-dev-runtime',
+      ],
       output: {
         globals: {
           react: 'React',
