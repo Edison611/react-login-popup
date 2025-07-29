@@ -1,1 +1,2 @@
-export { default as LoginPopup } from './LoginPopup';
+import LoginPopup from './LoginPopup';
+export default LoginPopup;
