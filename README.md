@@ -8,3 +8,11 @@ In your react project, you can import the module using:
 ```jsx
 import LoginPopup from 'react-login-popup';
 ```
+Also remember to wrap your project around with your GoogleOAuthProvider like so:
+```jsx
+import { GoogleOAuthProvider } from '@react-oauth/google';
+...
+<GoogleOAuthProvider clientId='client-id'>
+  {children}
+</GoogleOAuthProvider>
+```
