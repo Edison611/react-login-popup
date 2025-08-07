@@ -4,9 +4,12 @@ To install do the following from the terminal
 ```
 npm install github:Edison611/react-login-popup
 ```
-In your react project, you can import the module using:
+In your react project, you can import and use the module using:
 ```jsx
 import LoginPopup from 'react-login-popup';
+
+// You can have your own functions for handling successful or unsuccessful logins
+<LoginPopup onSuccess={handleSuccess} onError={handleError}/>
 ```
 Also remember to wrap your project around with your GoogleOAuthProvider like so:
 ```jsx
