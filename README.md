@@ -19,3 +19,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
   {children}
 </GoogleOAuthProvider>
 ```
+To get the the user object from Google once a user has logged in, you can use the following:
+```jsx
+import { useUser } from 'react-login-popup';
+```
