@@ -24,3 +24,11 @@ export const Default: Story = {
     onError: () => console.log("Error"),
   },
 };
+
+export const DarkMode: Story = {
+  args: {
+    onSuccess: (res) => console.log("Success:", res),
+    onError: () => console.log("Error"),
+    mode: 'dark',
+  },
+};
