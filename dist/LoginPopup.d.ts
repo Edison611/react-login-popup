@@ -3,6 +3,7 @@ import { CredentialResponse } from '@react-oauth/google';
 interface LoginPopupProps {
     onSuccess: (response: CredentialResponse) => void;
     onError?: () => void;
+    mode?: 'light' | 'dark';
 }
 declare const LoginPopup: React.FC<LoginPopupProps>;
 export default LoginPopup;
